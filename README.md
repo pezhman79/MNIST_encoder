@@ -29,11 +29,11 @@ To run this project, ensure the following are installed:
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/mnist-autoencoder.git
+   git clone https://github.com/pezhman9/MNIST_encoder.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd mnist-autoencoder
+   cd MNIST_encoder
    ```
 3. Install the required Python packages:
    ```bash
@@ -80,21 +80,35 @@ mnist-autoencoder/
 ## latetn space
 Original images (left) vs. Reconstructed images (right):
 
-![Example Reconstruction](outputs/reconstructed_example.png)
+<p align="center">
+  <img src="outputs/2.png" alt="Original" width="45%">
+  <img src="outputs/1.png" alt="Reconstructed" width="45%">
+</p>
 
-Classification report :
-```
-              precision    recall  f1-score   support
 
-           0       0.98      0.99      0.99       980
-           1       0.99      0.99      0.99      1135
-           ...
-           9       0.97      0.98      0.98       982
+<p align="center">
+  <b>Confustion matrix </b><br>
+  <img src="outputs/3.png" alt="Confustion matrix" width="80%">
+</p>
 
-    accuracy                           0.98     10000
-   macro avg       0.98      0.98      0.98     10000
-weighted avg       0.98      0.98      0.98     10000
-```
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.97      0.98      0.98       980
+           1       0.98      0.99      0.98      1135
+           2       0.96      0.96      0.96      1032
+           3       0.96      0.96      0.96      1010
+           4       0.96      0.98      0.97       982
+           5       0.95      0.96      0.96       892
+           6       0.97      0.97      0.97       958
+           7       0.97      0.96      0.96      1028
+           8       0.95      0.95      0.95       974
+           9       0.98      0.94      0.96      1009
+
+    accuracy                           0.97     10000
+    macro avg       0.96      0.96      0.96     10000
+    weighted avg       0.97      0.97      0.97     10000
+
 
 ## Future Work
 - Experiment with different latent space dimensions.
